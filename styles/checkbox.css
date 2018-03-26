@@ -60,13 +60,14 @@ body {
 
 .checkbox__switch::after {
     content: "\e901";
-    display: none;
+    visibility: hidden;
     color: currentColor;
     font-family: "icomoon" !important;
 }
 
 .checkbox__input:checked+.checkbox__switch::after {
     display: inline-flex;
+    visibility: visible;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -94,7 +95,7 @@ body {
     content: "\e908";
     position: absolute;
     left: 2px;
-    display: inline-block;
+    visibility: visible;
     font-size: 18px;
     color: #6A6A6A;
     transition: left ease-out 400ms;
@@ -138,4 +139,3 @@ body {
 .checkbox--info .checkbox__input:checked+.checkbox__switch::after {
     color: #FFF;
 }
-
