@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('./fonts/icomoon.eot?t9uvuq');
+    src: url('fonts/icomoon.eot?t9uvuq#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?t9uvuq') format('truetype'),
+    url('fonts/icomoon.woff?t9uvuq') format('woff'),
+    url('fonts/icomoon.svg?t9uvuq#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.checkbox__input {
+    position: absolute;
+    left: -280493px;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.checkbox__input:focus {
+    outline: none;
+}
+
+.checkbox__switch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    margin: 0 5px;
+    padding: 3px;
+    border: 1px solid #D3D1D1;
+    border-radius: 2px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.checkbox__switch::after {
+    content: "\e901";
+    display: none;
+    color: currentColor;
+    font-family: "icomoon" !important;
+}
+
+.checkbox__input:checked+.checkbox__switch::after {
+    display: inline-flex;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.checkbox__label {
+    display: inline-block;
+    margin: 0 3px;
+}
