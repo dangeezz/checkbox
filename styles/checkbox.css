@@ -58,6 +58,10 @@ body {
     cursor: pointer;
 }
 
+.checkbox__switch:hover {
+    box-shadow: 3px 2px 3px #D3D1D1;
+}
+
 .checkbox__switch::after {
     content: "\e901";
     visibility: hidden;
