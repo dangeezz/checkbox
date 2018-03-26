@@ -27,7 +27,7 @@ body {
 
 .checkbox {
     position: relative;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     padding: 10px;
 }
