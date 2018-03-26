@@ -72,6 +72,7 @@ body {
 .checkbox__input:checked+.checkbox__switch::after {
     display: inline-flex;
     visibility: visible;
+    font-weight: bolder;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
