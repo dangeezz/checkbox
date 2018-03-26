@@ -138,7 +138,8 @@ body {
 .checkbox--primary .checkbox__input:checked+.checkbox__switch,
 .checkbox--warning .checkbox__input:checked+.checkbox__switch,
 .checkbox--info .checkbox__input:checked+.checkbox__switch,
-.checkbox--danger .checkbox__input:checked+.checkbox__switch
+.checkbox--danger .checkbox__input:checked+.checkbox__switch,
+.checkbox--inverse .checkbox__input:checked+.checkbox__switch
 {
     border-color: transparent;
     box-shadow: 3px 2px 3px #D3D1D1;
