@@ -91,15 +91,12 @@ body {
 }
 
 .checkbox--is-slider .checkbox__switch::after {
-    content: "";
+    content: "\e908";
     position: absolute;
     left: 2px;
-    display: block;
-    width: 16px;
-    height: 16px;
-    border-radius: 289304px;
-    background: #6F6F6F;
-    border: 1px solid #D3D1D1;
+    display: inline-block;
+    font-size: 18px;
+    color: #6A6A6A;
     transition: left ease-out 400ms;
 }
 
@@ -107,3 +104,38 @@ body {
     left: 33px;
     transition: left ease-in 400ms;
 }
+
+.checkbox--primary .checkbox__input:checked+.checkbox__switch {
+    border-color: #D3D1D1;
+    background: #D3D1D1;
+}
+
+.checkbox--success .checkbox__input:checked+.checkbox__switch {
+    border-color: #83D17E;
+    background: #83D17E;
+}
+
+.checkbox--danger .checkbox__input:checked+.checkbox__switch {
+    border-color: #DB4834;
+    background: #DB4834;
+}
+
+.checkbox--warning .checkbox__input:checked+.checkbox__switch {
+    border-color: #EDE844;
+    background: #EDE844;
+}
+
+.checkbox--info .checkbox__input:checked+.checkbox__switch {
+    border-color: #64D2F6;
+    background: #64D2F6;
+}
+
+
+.checkbox--primary .checkbox__input:checked+.checkbox__switch::after,
+.checkbox--success .checkbox__input:checked+.checkbox__switch::after,
+.checkbox--danger .checkbox__input:checked+.checkbox__switch::after,
+.checkbox--warning .checkbox__input:checked+.checkbox__switch::after,
+.checkbox--info .checkbox__input:checked+.checkbox__switch::after {
+    color: #FFF;
+}
+
