@@ -141,7 +141,7 @@ body {
 .checkbox--danger .checkbox__input:checked+.checkbox__switch
 {
     border-color: transparent;
-    box-shadow: 2px 1px 5px #D3D1D1;
+    box-shadow: 3px 2px 3px #D3D1D1;
 }
 
 
