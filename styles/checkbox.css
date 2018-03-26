@@ -131,8 +131,14 @@ body {
     background: #64D2F6;
 }
 
+.checkbox--inverse .checkbox__input:checked+.checkbox__switch {
+    border-color: #111516;
+    background: #111516;
+}
+
 
 .checkbox--primary .checkbox__input:checked+.checkbox__switch::after,
+.checkbox--inverse .checkbox__input:checked+.checkbox__switch::after,
 .checkbox--success .checkbox__input:checked+.checkbox__switch::after,
 .checkbox--danger .checkbox__input:checked+.checkbox__switch::after,
 .checkbox--warning .checkbox__input:checked+.checkbox__switch::after,
