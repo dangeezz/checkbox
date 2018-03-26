@@ -82,3 +82,28 @@ body {
     border-radius: 50%;
     font-size: 0.7em;
 }
+
+.checkbox--is-slider .checkbox__switch {
+    position: relative;
+    width: 53px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.checkbox--is-slider .checkbox__switch::after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 289304px;
+    background: #D3D1D1;
+    border: 1px solid #D3D1D1;
+    transition: left ease-out 400ms;
+}
+
+.checkbox--is-slider .checkbox__input:checked+.checkbox__switch::after {
+    left: 33px;
+    transition: left ease-in 400ms;
+}
