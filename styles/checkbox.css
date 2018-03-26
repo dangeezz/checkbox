@@ -75,3 +75,10 @@ body {
     display: inline-block;
     margin: 0 3px;
 }
+
+.checkbox--is-round .checkbox__switch {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    font-size: 0.7em;
+}
